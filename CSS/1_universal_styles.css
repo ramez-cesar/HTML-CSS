@@ -20,7 +20,19 @@ html {
 }
 
 /* 
-    
+    1.- Niveles de especificidad:
+            - !important        (1.0.0.0.0)
+            - inline styles     (0.1.0.0.0)
+            - id                (0.0.1.0.0)
+            - class             (0.0.0.1.0)
+            - etiquetas         (0.0.0.0.1)
+        Combinar algunas de estas, podrá incrementar su nivel de especificidad, ejemplo:
+            .clase1 .clase2     (0.0.0.2.0)
+                Incrementa su importancia quedando por encima (en estos casos) de un #id
+            .clase1 selector    (0.0.0.1.1)
+                Incrementa su importancia quedando por encima en donde se llama a solo una clase.
+        NOTA: El inspector de elementos siempre mostrará aquellos valores con mayor importancia de 
+            arriba hacia abajo.
     
 */
 
