@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <main>
+        <!-- 
+            1.- El atributo controls asigna los controles de "play/pause" así como la barra de progreso del video
+            2.- proload="auto" no indica que el video deba reproducirse automáticamente, sino que le indica al 
+                navegador que debe descargar el video de forma automática porque el usuario podría usarlo cuando ingresa al sitio web.
+            3.- source nos ayuda con el tema de carga de formatos de videos. Es decir, si el navegador no tiene
+                ningún problema con cargar ambos formatos especificados en el ejemplo, cargará el primero. Sin embargo, en caso de que el navegador no reconozca el formato .mp4 pero sí al formato .m4v, este 
+                será quien termine renderizándose. De este modo podemos despreocuparnos hasta cierto punto en el
+                tema de renderizado de videos por alguna incompatibilidad con el navegador.
+        -->
+        <video controls preload="auto">
+            <source src="ruta/del/video.mp4">
+            <source src="ruta/del/video.m4v">
+        </video>
+    </main>
+</body>
+</html>
