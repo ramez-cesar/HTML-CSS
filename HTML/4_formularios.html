@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <main>
+        <!-- Formulario -->
+        <!-- 
+            - action:
+                Contendrá el nombre del agente que procesará los datos remitidos al servidor
+                (scripts de backend)
+            - label:
+                Permite asociar un control con un texto a manera de mejorar la accesibilidad
+                de los formularios.
+            - for: 
+                Indica el control afectado. Para ello, el control debe tener un atributo id el
+                cual debe tener el mismo nombre.
+            - input:
+                Control que permite al usuario introducir información.
+            -type:
+                Indica el tipo de control que actuará en el fomulario.
+            - name:
+                Indentifica al control. Por esta razón cada name debe ser diferentes.
+            - autocomplete:
+                Indica que, según donde sea invocado, podrá asignar a estos campos sus valores 
+                automáticamente.
+            - placeholder:
+                Muestra en los controles de texto un texto que endica qué tipo de valor se espera
+            - required:
+                Permite indicar qué controles son obligatorios por llenar.
+            - submit:
+                Permite al usuario enviar los datos al servidor.
+        -->
+        <form action="">
+            <label for="nombre">
+                <span>Texto</span>
+                <input type="text" name="nombre" id="nombre" autocomplete="name" placeholder="Nombre" required>
+            </label>
+            <label for="correo">
+                <span>Correo</span>
+                <input type="email" name="correo" id="correo" autocomplete="email" placeholder="Correo" required>
+            </label>
+            <input type="submit">
+        </form>
+
+        <br>
+        <br>
+
+        <!-- Select -->
+        <!-- 
+            - value:
+                Permite establecer el valor inicial de una etiqueta
+        -->
+        <span>Cursos</span>
+        <input list="cursos">
+        <datalist id="cursos">
+            <option value="Git"></option>
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JavaScript"></option>
+        </datalist>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- Calendario -->
+        <form action="">
+            <label for="calendario">
+                <span>Calendario</span>
+                <input type="datetime-local" id="calendario" name="calendario">
+            </label>
+            <input type="submit">
+        </form>
+    </main>
+</body>
+</html>
