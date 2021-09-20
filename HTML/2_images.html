@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+
+    <!-- Tipos de imagen para un proyecto:
+        1.- PNG-8 (lossless):
+            Imagen sin pérdida que son ideales para íconos o logotipos con transparentes
+        2.- PNG-24 (lossless):
+            Imagen similar a PNG-8 el cual tendrá un mayor peso por un mayor uso de gama de colores (>256)
+        3.- JPG (lossy):
+            Imagen con pérdida que maneja una gama de colores muy amplia (regularmente fortografías) cuyo formato es ideal para fondos en sitios web debido a su pérdida el cual ayudrá a la carga rápida en el sitio.
+        4.- SVG (lossless):
+            Imagen sin pérdida. Son escalables siendo ideal para logotipos en pantallas de retina (alta resolución).
+
+
+        Optimización de imágenes:
+            Mejora (reduce) el tamaño de la imagen:
+                - Tiny PGN.
+            Elimina metadatos de la imagen:
+                - Verexif.
+    -->
+    <main>
+        <!-- 
+            <figure> funciona como una etiqueta contenedora específicamente para las etiquetas <img> (imágenes).
+            Semánticamente <figure> debería ser usada en lugar de envolver a <img> dentro de un <div> u otro
+            contenedor. 
+        -->
+        <figure>
+            <img src="ruta/de/imagen" alt="Título1" title="Título2"> 
+            <!-- 
+                El atributo alt mostrará una descripción de la imagen en caso de existir un error al renderizarse,
+                mientras que title mostrará otra posible descripción o título (según se aplique) al poner el cursor
+                del mouse por encima de la imagen. Ambos forman parte fundamental para temas de accesilidad.
+            -->
+        </figure>
+    </main>
+</body>
+</html>
