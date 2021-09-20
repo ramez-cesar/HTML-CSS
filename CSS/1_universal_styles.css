@@ -1,0 +1,26 @@
+
+/* 
+    root hace referencia a la etiqueta <html> que se declara al inicio del documento,
+    es decir, hace referencia a la raíz o punto de partida de nuestro proyecto.
+*/
+:root {
+    --nombre-Variable1: valor1;
+    --nombre-Variable2: valor2;
+}
+
+* {
+    box-sizing: border-box;     /* Evita un desbordamiento */
+    margin: 0;  /* Elimina el margin generado automáticamente por el navegador */
+    padding: 0;     /* Elimina el padding generado automáticamente por el navegador */
+}
+
+html {
+    font-size: 62.5%;   /* Equivale a 10px por cada unidad en rem (1.6rem = 16px)*/
+    /* rem nos ayudará mucho en el tema de accesibilidad al ser una medida relativa y no absoluta como lo son los pixeles. */
+}
+
+/* 
+    
+    
+*/
+
