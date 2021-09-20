@@ -34,5 +34,30 @@ html {
         NOTA: El inspector de elementos siempre mostrará aquellos valores con mayor importancia de 
             arriba hacia abajo.
     
+    2.- Combinadores:
+            - Adyacent sibling:
+                Hermano cercano:
+                    selector1 + selector2
+                Aplica estilos al selector2 que este justo debajo del selector1.
+                Si una etiqueta3 está de por medio de estos, no se aplicará el estilo.
+            - General sibling:
+                Hermano general:
+                    selector1 ~ selector2
+                Aplica estilos al selector2 que este bajo la misma fila del selector1 sin importar  
+                que no este uno debajo del otro. Bastará con pertenecer a la misma fila de identación.
+            Child:
+                Hijo directo:
+                    selector1 > selector2
+                Aplica estilos al selector2 siempre que pertenezca a un contenedor padre directo.
+                Si un div, section, article (por poner algunos ejemplos) contienen etiquetas de contenido
+                y no etiquetas contenedoras, aplicará los estilos. En cambio, si dentro de algún contendor 
+                existe otro sub contenedor, los estilos indicados no llegarán a estas etiquetas.
+            Descendant:
+                Descendiente:
+                    selector1 selector2
+                Aplica estilos al selector2 con el simple hecho de formar parte del selctor1 como contenedor.
+                Aquí no importa a qué etiqueta queramos llegar ni mucho menos si hay otras etiquetas de por medio,
+                simplemente aplicará los estilos a aquellas etiquetas que estén endicadas.
+    
 */
 
